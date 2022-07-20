@@ -21,7 +21,7 @@ body{
 }
 
 .img{ 
-    width: 175px;
+    width: 200px;
 }
 
 .wrapper{ 
@@ -33,11 +33,104 @@ body{
 -moz-box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
 box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
     display: flex;
+    padding-right: 50px;
+    
     justify-content: center;
     align-items: center;
 }
 
 .wrapper.active{ 
      height: 450px;
-     padding-right: 50px;
 }
+
+.wrapper.active .header h1{ 
+    font-size: 2.5rem;
+}
+
+.header-form{ 
+    padding-left: 50px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .header h1{ 
+    text-align: center;
+    font-size: 3rem;
+}
+
+.wrapper .header p{ 
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.wrapper .form{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .form input{ 
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: .1rem solid rgb(69, 22, 186);
+}
+
+.wrapper .form input::placeholder{ 
+    padding-left: .5rem;
+    color: rgb(130, 130, 130);
+    background-color: transparent;
+}
+
+.wrapper .form button{ 
+   width: 100%;
+   height: 40px;
+   background-color: rgb(69, 22, 186);
+   color: white;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.wrapper .form button:hover{ 
+    border: .1rem solid rgb(69, 22, 186);
+    color: rgb(69, 22, 186);
+    background-color: transparent;
+    font-weight: bolder;
+ }
+
+.wrapper .qr-code{ 
+    display: none;
+    margin-top: 15px;
+    padding: 9px;
+    margin-left: 20px;
+    margin-right: 25px;
+    border-radius: 0px;
+    pointer-events: none;
+    border: 1px solid rgb(211, 211, 211);
+ }
+
+ .wrapper .qr-code img{ 
+    width: 200px;
+ }
+
+ .wrapper .active .qr-code{ 
+    display:block;
+    transition: all .5s .5s ease;
+ }
+
+
+ 
+
+
