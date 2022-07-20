@@ -23,7 +23,7 @@ body {
 .wrapper {
     background-color: #eee;
     padding-right: 50px;
-    height: 380px;
+    height: 360px;
     width: 650px;
     border-radius: 10px;
     box-shadow: 0 .8rem 2.5rem rgba(0, 0, 0, .8);
@@ -33,7 +33,7 @@ body {
 }
 
 .wrapper.active {
-    height: 300px;
+    height: 360px;
     
 }
 
