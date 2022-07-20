@@ -1,13 +1,19 @@
 const inputValue = document.querySelector('#inputValue');
-const bntValue = document.querySelector('#btnValue');
+const btnValue = document.querySelector('#btnValue');
 const imgQrCode = document.querySelector('#imgQrCode');
 const wrapper = document.querySelector('.wrapper');
-let ValueDefault;
+let valueDefault;
 
-//https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+// https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example 
 
-bntValue.addEventListener('click', () => { 
-    let qrcodeValue = inputValue.value.trim();
-    if (!qrcodeValue || qrcodeValue === ValueDefault) return;
-    ValueDefault = qrcodeValue;
-} )
+btnValue.addEventListener('click', () => {
+    let qrcodeValue = inputValue.value.trim();  
+    if(!qrcodeValue || qrcodeValue === valueDefault) return;
+    valueDefault = qrcodeValue;
+    btnValue.innerText = 'Gerando QR Code...'
+    imgQrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${valueDefault}`
+    imgQrCode.addEventListener('load', () => {
+        wrapper.classList.add('active');
+        btnValue.innerText = 'Gerar QRCode'
+    })
+})

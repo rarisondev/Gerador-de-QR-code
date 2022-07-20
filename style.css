@@ -1,74 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{ 
-    font-size: 62.5%;    
+html {
+    font-size: 62.5%;
     height: 100vh;
     width: 100vw;
     background-color: rgb(69, 22, 186);
 }
 
-body{ 
+body {
     height: 100%;
     display: grid;
     place-items: center;
 }
 
-.img{ 
-    width: 200px;
-}
-
-.wrapper{ 
-  background-color: #eee;
-  height: 350px;
-  width: 650px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
--moz-box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
-box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
-    display: flex;
+.wrapper {
+    background-color: #eee;
     padding-right: 50px;
-    
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 .8rem 2.5rem rgba(0, 0, 0, .8);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper.active{ 
-     height: 450px;
+.wrapper.active {
+    height: 300px;
+    
 }
 
-.wrapper.active .header h1{ 
+.wrapper.active .header h1 {
     font-size: 2.5rem;
 }
 
-.header-form{ 
+.header-form {
     padding-left: 50px;
     margin-right: 10px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items:    center;
 }
 
-.wrapper .header h1{ 
-    text-align: center;
+.wrapper .header h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
-.wrapper .header p{ 
-    text-align: center;
+.wrapper .header p {
     font-size: 1.6rem;
     margin-bottom: 5px;
+    text-align: center;
 }
 
-.wrapper .form{ 
+.wrapper .form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,7 +70,7 @@ box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
     justify-content: center;
 }
 
-.wrapper .form input{ 
+.wrapper .form input {
     background-color: transparent;
     width: 100%;
     outline: none;
@@ -86,51 +80,45 @@ box-shadow: 0px 2px 32px 3px rgba(13,0,13,0.9);
     border-bottom: .1rem solid rgb(69, 22, 186);
 }
 
-.wrapper .form input::placeholder{ 
+.wrapper .form input::placeholder{
     padding-left: .5rem;
-    color: rgb(130, 130, 130);
-    background-color: transparent;
+    color: black;
 }
 
-.wrapper .form button{ 
-   width: 100%;
-   height: 40px;
-   background-color: rgb(69, 22, 186);
-   color: white;
-   border: none;
-   outline: none;
-   border-radius: 5px;
-   cursor: pointer;
+.wrapper .form  button {
+    width: 100%;
+    height: 40px;
+    background-color:rgb(69, 22, 186);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    cursor: pointer;
 }
 
-.wrapper .form button:hover{ 
+.wrapper .form button:hover{
     border: .1rem solid rgb(69, 22, 186);
     color: rgb(69, 22, 186);
-    background-color: transparent;
+    background-color:   transparent;
     font-weight: bolder;
- }
+}
 
-.wrapper .qr-code{ 
+.wrapper .qr-code {
     display: none;
-    margin-top: 15px;
-    padding: 9px;
+    padding: 10px;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-right: 25px;
-    border-radius: 0px;
+    margin-right: 10px;
+    border-radius: 5px;
     pointer-events: none;
-    border: 1px solid rgb(211, 211, 211);
- }
+    border: 1px solid #ccc;
+}
 
- .wrapper .qr-code img{ 
-    width: 200px;
- }
+.wrapper .qr-code img {
+    width: 170px;
+}
 
- .wrapper .active .qr-code{ 
-    display:block;
+.wrapper.active .qr-code{
+    display: block;
     transition: all .5s .5s ease;
- }
-
-
- 
-
-
+}
