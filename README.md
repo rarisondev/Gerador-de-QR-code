@@ -6,6 +6,8 @@ Gerador de QR-Code
 Html5, CSS3 and JavaScript components
 
 ## Let's go 👨‍💻
+![Gerador-de-QR-code](https://user-images.githubusercontent.com/83453859/180615599-73dabd4f-f541-4201-8827-0ad651a3f6ab.JPG)
+
 Você pode ver o projeto através do link abaixo 👇 <br><br>
 [Clique aqui](https://rarisondev.github.io/Gerador-de-QR-code)
 
